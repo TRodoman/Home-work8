@@ -1,0 +1,427 @@
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 6px;
+  }
+
+  header {
+    height: 10vh;
+  }
+
+  .logo {
+    height: 10vh;
+  }
+
+  .screen {
+    box-sizing: border-box;
+  }
+
+  .list1 {
+    height: 960px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-self: stretch;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2vh;
+  }
+
+  .left-one {
+    width: 40%;
+    order: 3;
+  }
+
+  .left-two {
+    width: 40%;
+    order: 1;
+    margin-bottom: 2.5vh;
+  }
+
+  .rignt-two {
+    width: 40%;
+    order: 2;
+    margin-bottom: 2.5vh;
+  }
+
+  .rignt-one {
+    width: 40%;
+    order: 4;
+  }
+
+  .left-one > img,
+  .rignt-one > img {
+    width: 100%;
+  }
+
+  .left-two,
+  .rignt-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-one {
+    align-self: center;
+    transform: translateX(-100vh);
+    animation: img-show-left 1s linear 1 forwards;
+  }
+
+  .rignt-one {
+    align-self: center;
+    transform: translateX(200vh);
+    animation: img-show-rignt 1s linear 1 forwards;
+  }
+
+  .left-two > img:first-child,
+  .rignt-two > img:first-child {
+    height: 35vh;
+  }
+
+  .rignt-two > img:last-child,
+  .left-two > img:last-child {
+    margin-bottom: 0;
+    height: 35vh;
+  }
+
+  /*-----------------------Services---------------------*/
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    height: 10vh;
+  }
+
+  .list2 {
+    height: 1155px;
+  }
+
+  .services .rignt {
+    width: 60%;
+    height: 530px;
+    margin: 0 auto;
+    display: flex;
+    order: 1;
+  }
+
+  .services .left {
+    width: 100%;
+    height: 700px;
+    margin: 30px auto 50px;
+    order: 2;
+  }
+
+  .services .left > div {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .bg > img {
+    width: 100%;
+    height: 95vh;
+  }
+
+  .c > img {
+    height: 28vh;
+  }
+
+  /*---------------------Team-------------------*/
+
+  .list3 {
+    height: 1140px;
+  }
+
+  .tems {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tems > div {
+    width: 40%;
+    height: 65vh;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 2.5vh;
+  }
+
+  .name-one {
+    order: 1;
+  }
+
+  .name-two {
+    order: 2;
+  }
+
+  .name-three {
+    order: 3;
+  }
+
+  .name-four {
+    order: 4;
+  }
+
+  /* -------------Contact------------ */
+  .list4 {
+    height: 1000px;
+  }
+  .message {
+    width: 60%;
+  }
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .parent {
+    width: 94%;
+    padding-right: 3%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .iframe {
+    width: 60%;
+    height: 45vh;
+    margin: 2.5vh;
+    display: flex;
+    order: 1;
+  }
+}
+/* ---------------------- max-width: 768px----------------*/
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 5px;
+  }
+
+  header {
+    height: 8vh;
+  }
+
+  .logo {
+    height: 8vh;
+  }
+
+  .screen {
+    box-sizing: border-box;
+  }
+
+  .list1 {
+    height: 3170px;
+  }
+
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2vh;
+  }
+
+  .left-one {
+    width: 100%;
+    display: flex;
+    order: 5;
+    margin-bottom: 2.5vh;
+  }
+
+  .left-two {
+    width: 100%;
+    margin-bottom: 2.5vh;
+  }
+
+  .rignt-two {
+    width: 100%;
+
+    margin-bottom: 2.5vh;
+  }
+
+  .rignt-one {
+    width: 100%;
+    display: flex;
+    order: 6;
+    margin-bottom: 2.5vh;
+  }
+
+  .left-one > img,
+  .rignt-one > img {
+    height: 84vh;
+    width: 100%;
+  }
+
+  .left-two,
+  .rignt-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rignt-two > img:last-child,
+  .left-two > img:last-child {
+    margin-bottom: 0;
+  }
+
+  .left-one {
+    align-self: center;
+    transform: translateX(-100vh);
+    animation: img-show-left 1s linear 1 forwards;
+  }
+
+  .rignt-one {
+    align-self: center;
+    transform: translateX(200vh);
+    animation: img-show-rignt 2.5s linear 1 forwards;
+  }
+
+  .left-two > img:first-child {
+    height: 55vh;
+    transform: translateX(-100vh);
+    animation: img-show-left 1s linear 1 forwards;
+  }
+
+  .left-two > img:last-child {
+    height: 55vh;
+    transform: translateX(200vh);
+    animation: img-show-rignt 2.5s linear 1 forwards;
+  }
+
+  .rignt-two > img:first-child {
+    height: 55vh;
+    transform: translateX(-100vh);
+    animation: img-show-left 1s linear 1 forwards;
+  }
+  .rignt-two > img:last-child {
+    height: 55vh;
+    transform: translateX(200vh);
+    animation: img-show-rignt 2.5s linear 1 forwards;
+  }
+
+  /*-----------------------Services---------------------*/
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    height: 8vh;
+  }
+
+  .list2 {
+    height: 500px;
+  }
+
+  .services .rignt {
+    width: 0;
+    height: 0;
+  }
+
+  .services .left {
+    width: 96%;
+    height: 500px;
+    margin: 0;
+  }
+
+  .services .left > div {
+    margin: 0 auto;
+  }
+
+  .bg > img {
+    width: 0;
+    height: 0;
+  }
+
+  .c > img {
+    height: 25vh;
+  }
+
+  /* --------------Team----------------- */
+  .list3 {
+    height: 2560px;
+  }
+
+  .tems {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tems > div {
+    width: 60%;
+    height: 75vh;
+    border-radius: 40px;
+    position: relative;
+    margin-bottom: 2.5vh;
+  }
+
+  .name-one {
+    order: 1;
+  }
+
+  .name-two {
+    order: 2;
+  }
+
+  .name-three {
+    order: 3;
+  }
+
+  .name-four {
+    order: 4;
+  }
+
+  /* ----------------------Contact---------------- */
+
+  .list4 {
+    height: 1000px;
+  }
+
+  .contact-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .parent {
+    width: 92%;
+    padding-right: 5%;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .message {
+    width: 60%;
+    display: flex;
+    order: 2;
+  }
+
+  textarea {
+    height: 13vh;
+  }
+
+  .iframe {
+    width: 60%;
+    height: 45vh;
+    margin: 2.5vh;
+    display: flex;
+    order: 1;
+  }
+}

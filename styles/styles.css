@@ -13,22 +13,27 @@
 }
 
 body {
+  /* margin: 0 auto; */
   background: var(--background-color-input);
   font-family: "Rosario", sans-serif;
   color: var(--color-text);
   line-height: 1.2;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 .container {
-  margin: 0 auto;
-  max-width: 1920px;
+  /* margin: 0 auto;
+  max-width: 1920px; */
   background: var(--background-color);
 }
+
 header {
   background: var(--background-header);
   display: flex;
@@ -38,7 +43,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 4;
+  z-index: 10;
 }
 
 .logo {
@@ -70,8 +75,8 @@ header .logo img {
 .screen {
   height: 95vh;
   box-sizing: border-box;
-  overflow: hidden;
 }
+
 .box {
   display: flex;
   height: 95vh;
@@ -88,6 +93,7 @@ header .logo img {
   transform: translateX(-100vh);
   animation: img-show-left 2s linear 1 forwards;
 }
+
 .rignt-one {
   align-self: center;
   transform: translateX(200vh);
@@ -114,20 +120,22 @@ header .logo img {
 }
 
 .left-two > img:first-child {
-  height: 40vh;
+  /* height: 40vh; */
   margin-bottom: 2.5vh;
 }
+
 .left-two > img:last-child {
-  height: 40vh;
+  /* height: 40vh; */
   margin-bottom: 6.4vh;
 }
 
 .rignt-two > img:first-child {
-  height: 40vh;
-  margin-bottom: 3.5vh;
+  /* height: 40vh; */
+  margin-bottom: 2.5vh;
 }
+
 .rignt-two > img:last-child {
-  height: 40vh;
+  /* height: 40vh; */
   margin-bottom: 6.4vh;
 }
 
@@ -136,9 +144,11 @@ header .logo img {
 .services {
   display: flex;
 }
+
 .header {
   height: 13vh;
 }
+
 .services .left {
   width: 60%;
   display: flex;
@@ -146,6 +156,7 @@ header .logo img {
   box-sizing: border-box;
   position: relative;
 }
+
 .services .left > div {
   height: 50%;
   width: 50%;
@@ -163,6 +174,7 @@ header .logo img {
 .bg {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .c > img {
@@ -227,22 +239,31 @@ header .logo img {
 
 .name-one {
   background-image: url(../img/team1_1.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .name-two {
   background-image: url(../img/team2_2.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .name-three {
   background-image: url(../img/team3_3.png);
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .name-four {
   background-image: url(../img/team4_4.png);
+  /* background-repeat: no-repeat; */
+}
+
+.name-one,
+.name-two,
+.name-three,
+.name-four {
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .tems:hover > div {
@@ -270,7 +291,6 @@ header .logo img {
   font-family: "Volkhov", serif;
   font-size: 4.8rem;
   line-height: 1.3;
-
   color: var(--color-tems);
 }
 
@@ -301,60 +321,45 @@ header .logo img {
   font-size: 6rem;
 }
 
-.input-box {
-  background-color: var(--background-color-input);
+.parent {
+  display: grid;
+  grid-template-columns: 45% 51%;
+  grid-template-rows: 8vh;
+  gap: 20px;
   width: 100%;
-  height: 31vh;
-  padding: 3vh 0.3%;
+  height: 25vh;
+  padding: 3%;
+  padding-right: 2%;
+  background-color: var(--background-color-input);
 }
 
 .input {
-  width: 93%;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  grid-area: 1 / 1 / 2 / 2;
 }
-
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
 .textarea {
-  text-align: center;
-  width: 92.5%;
-  height: 19vh;
-  margin-left: 3.2%;
-  margin-top: 4vh;
-}
-
-.input-text {
-  width: 45%;
-  margin: 0;
-}
-
-.input-email {
-  width: 55%;
-  margin: 0;
-  margin-left: 4.5vh;
-}
-
-textarea {
-  width: 98.5%;
-  height: 18vh;
-  padding-left: 10px;
+  grid-area: 2 / 1 / 4 / 3;
 }
 
 input[type="text"] {
   width: 95%;
-  height: 8vh;
+  height: 88%;
+  border: none;
 }
 
 input[type="email"] {
   width: 95%;
-  height: 8vh;
+  height: 88%;
+  border: none;
 }
 
-input::placeholder {
-  font-family: "Rosario", sans-serif;
-  font-weight: 700;
-  font-size: 3.6vh;
-  color: var(--color-placeholder);
+textarea {
+  width: 97.5%;
+  height: 14vh;
+  border: none;
+  padding-left: 10px;
 }
 
 textarea::placeholder {
@@ -368,6 +373,13 @@ textarea[name="details"] {
   resize: none;
 }
 
+input::placeholder {
+  font-family: "Rosario", sans-serif;
+  font-weight: 700;
+  font-size: 3.6vh;
+  color: var(--color-placeholder);
+}
+
 input[type="text" i] {
   padding-left: 10px;
 }
@@ -377,6 +389,11 @@ input[type="email" i] {
 }
 
 iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.iframe {
   width: 33%;
   height: 51vh;
 }
