@@ -1,22 +1,14 @@
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
   :root {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 992px) {
   :root {
-    font-size: 6px;
+    font-size: 8px;
   }
-
-  header {
-    height: 10vh;
-  }
-
-  .logo {
-    height: 10vh;
-  }
-
+  /* ---------------------Gallery---------------- */
   .screen {
     box-sizing: border-box;
   }
@@ -83,13 +75,13 @@
 
   .left-two > img:first-child,
   .rignt-two > img:first-child {
-    height: 35vh;
+    /* height: 30vh; */
   }
 
   .rignt-two > img:last-child,
   .left-two > img:last-child {
     margin-bottom: 0;
-    height: 35vh;
+    height: 30vh;
   }
 
   /*-----------------------Services---------------------*/
@@ -184,11 +176,10 @@
     align-items: center;
     margin: 0 auto;
   }
-  .parent {
-    width: 94%;
-    padding-right: 3%;
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 3vh;
   }
-
   iframe {
     width: 100%;
     height: 100%;
@@ -200,14 +191,13 @@
     height: 45vh;
     margin: 2.5vh;
     display: flex;
-    order: 1;
   }
 }
 /* ---------------------- max-width: 768px----------------*/
 
 @media screen and (max-width: 768px) {
   :root {
-    font-size: 5px;
+    font-size: 6.5px;
   }
 
   header {
@@ -249,7 +239,6 @@
 
   .rignt-two {
     width: 100%;
-
     margin-bottom: 2.5vh;
   }
 
@@ -281,7 +270,7 @@
   .left-one {
     align-self: center;
     transform: translateX(-100vh);
-    animation: img-show-left 1s linear 1 forwards;
+    animation: img-show-left 2.5s linear 1 forwards;
   }
 
   .rignt-one {
@@ -353,7 +342,7 @@
 
   /* --------------Team----------------- */
   .list3 {
-    height: 2560px;
+    height: 2370px;
   }
 
   .tems {
@@ -363,7 +352,7 @@
 
   .tems > div {
     width: 60%;
-    height: 75vh;
+    height: 70vh;
     border-radius: 40px;
     position: relative;
     margin-bottom: 2.5vh;
@@ -398,9 +387,10 @@
     margin: 0 auto;
   }
   .parent {
-    width: 92%;
-    padding-right: 5%;
+    height: 26vh;
+    gap: 10px;
   }
+
   iframe {
     width: 100%;
     height: 100%;
@@ -412,7 +402,10 @@
     display: flex;
     order: 2;
   }
-
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 2.6vh;
+  }
   textarea {
     height: 13vh;
   }

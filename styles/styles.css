@@ -1,7 +1,7 @@
 @import url(./animation.css);
 
 :root {
-  font-size: 10px;
+  font-size: 16px;
   --color-text: #000000;
   --background-color: #ffffff;
   --background-header: #000000;
@@ -13,7 +13,6 @@
 }
 
 body {
-  /* margin: 0 auto; */
   background: var(--background-color-input);
   font-family: "Rosario", sans-serif;
   color: var(--color-text);
@@ -29,8 +28,7 @@ ul {
 }
 
 .container {
-  /* margin: 0 auto;
-  max-width: 1920px; */
+  max-width: 1920px;
   background: var(--background-color);
 }
 
@@ -68,7 +66,7 @@ header .logo img {
   color: var(--color-header);
   font-style: italic;
   font-weight: 700;
-  font-size: 3.6rem;
+  font-size: 3rem;
 }
 
 /*-----------------------Gallery---------------------*/
@@ -101,13 +99,11 @@ header .logo img {
 }
 
 .left-two {
-  width: 24.2%;
   transform: translateX(-100vh);
   animation: img-show-left 1s linear 1 forwards;
 }
 
 .rignt-two {
-  width: 24.2%;
   transform: translateX(200vh);
   animation: img-show-rignt 1s linear 1 forwards;
 }
@@ -117,25 +113,16 @@ header .logo img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 24.2%;
 }
 
-.left-two > img:first-child {
-  /* height: 40vh; */
-  margin-bottom: 2.5vh;
-}
-
-.left-two > img:last-child {
-  /* height: 40vh; */
-  margin-bottom: 6.4vh;
-}
-
+.left-two > img:first-child,
 .rignt-two > img:first-child {
-  /* height: 40vh; */
   margin-bottom: 2.5vh;
 }
 
+.left-two > img:last-child,
 .rignt-two > img:last-child {
-  /* height: 40vh; */
   margin-bottom: 6.4vh;
 }
 
@@ -186,7 +173,7 @@ header .logo img {
   margin: 0;
   font-style: italic;
   font-weight: 700;
-  font-size: 4.3rem;
+  font-size: 3rem;
 }
 
 .ellipse-one {
@@ -214,6 +201,7 @@ header .logo img {
 }
 
 /*---------------------Team-------------------*/
+
 .title {
   display: flex;
   justify-content: center;
@@ -221,7 +209,7 @@ header .logo img {
   margin-top: 1.3vh;
   margin-bottom: 5vh;
   font-weight: 700;
-  font-size: 8rem;
+  font-size: 6rem;
 }
 
 .tems {
@@ -239,22 +227,18 @@ header .logo img {
 
 .name-one {
   background-image: url(../img/team1_1.png);
-  /* background-repeat: no-repeat; */
 }
 
 .name-two {
   background-image: url(../img/team2_2.png);
-  /* background-repeat: no-repeat; */
 }
 
 .name-three {
   background-image: url(../img/team3_3.png);
-  /* background-repeat: no-repeat; */
 }
 
 .name-four {
   background-image: url(../img/team4_4.png);
-  /* background-repeat: no-repeat; */
 }
 
 .name-one,
@@ -289,7 +273,7 @@ header .logo img {
   border-radius: 0px 0px 40px 40px;
 
   font-family: "Volkhov", serif;
-  font-size: 4.8rem;
+  font-size: 3rem;
   line-height: 1.3;
   color: var(--color-tems);
 }
@@ -316,9 +300,9 @@ header .logo img {
 .message > p {
   text-align: center;
   font-style: italic;
-  margin: 4vh 0 2vh;
+  margin: 2vh 0;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .parent {
@@ -327,28 +311,23 @@ header .logo img {
   grid-template-rows: 8vh;
   gap: 20px;
   width: 100%;
-  height: 25vh;
+  height: 29.5vh;
   padding: 3%;
-  padding-right: 2%;
+  padding-right: 0;
   background-color: var(--background-color-input);
 }
 
 .input {
   grid-area: 1 / 1 / 2 / 2;
 }
-.div2 {
+.email {
   grid-area: 1 / 2 / 2 / 3;
 }
 .textarea {
   grid-area: 2 / 1 / 4 / 3;
 }
 
-input[type="text"] {
-  width: 95%;
-  height: 88%;
-  border: none;
-}
-
+input[type="text"],
 input[type="email"] {
   width: 95%;
   height: 88%;
@@ -360,6 +339,7 @@ textarea {
   height: 14vh;
   border: none;
   padding-left: 10px;
+  padding-top: 1.5vh;
 }
 
 textarea::placeholder {
@@ -380,10 +360,7 @@ input::placeholder {
   color: var(--color-placeholder);
 }
 
-input[type="text" i] {
-  padding-left: 10px;
-}
-
+input[type="text" i],
 input[type="email" i] {
   padding-left: 10px;
 }
@@ -431,7 +408,7 @@ iframe {
 
 .footer-contact > p {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.2;
   margin: 0;
   margin-right: 2%;
@@ -457,7 +434,7 @@ iframe {
   margin: 0;
   font-style: normal;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .title-two {
@@ -484,7 +461,8 @@ iframe {
   align-items: center;
 }
 
-.link-i {
+.link-i,
+.link-t {
   margin-left: 25%;
 }
 
@@ -492,13 +470,9 @@ iframe {
   margin-left: 23%;
 }
 
-.link-t {
-  margin-left: 25%;
-}
-
 .contact-link {
   margin: 0;
-  margin-left: 6%;
+  margin-left: 8%;
   margin-bottom: 0.5vh;
   font-style: italic;
   font-weight: 600;
